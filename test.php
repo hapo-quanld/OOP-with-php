@@ -1,13 +1,15 @@
 <?php
     class Genre {
         public $name;
+        public $movies;
 
-        public function __construct($name) {
+        public function __construct($name, $movies) {
             $this ->name = $name;
+            $this ->movies = $movies;
         }
 
         public function shuffle(){
-            shuffle($this->name);
+            shuffle($this->movies);
         }
     }
 
